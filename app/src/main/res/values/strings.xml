@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="team_a_name">Team A</string>
+    <string name="team_b_name">Team B</string>
+    <string name="score_a">0</string>
+    <string name="score_b">0</string>
+    <string name="plus_3_btn">+3 Points</string>
+    <string name="plus_2_btn">+2 Points</string>
+    <string name="free_throw_btn">Free Throw</string>
+    <string name="reset_btn">New Game</string>
+    <string name="double_dice">Double dice</string>
+    <string name="six_dice">6 dice</string>
+    <string name="five_dice">5 dice</string>
+    <string name="four_dice">4 dice</string>
+    <string name="three_dice">3 dice</string>
+    <string name="two_dice">2 dice</string>
+    <string name="one_dice">1 dice</string>
+    <string name="roll_two_words">Roll \nTwo!</string>
+    <string name="double_word">Double!</string>
+    <string name="six_word">Six!</string>
+    <string name="five_word">Five!</string>
+    <string name="four_word">Four!</string>
+    <string name="three_word">Three!</string>
+    <string name="two_word">Two!</string>
+    <string name="one_word">One!</string>
+</resources>

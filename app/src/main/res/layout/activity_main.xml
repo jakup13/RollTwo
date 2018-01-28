@@ -1,0 +1,312 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dices_bck_03"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="#44000000"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/team_a_name"
+                android:textColor="#cccccc"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:text="@string/score_a"
+                android:textColor="#ffffff"
+                android:textSize="56sp" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/double_dice"
+                android:onClick="doubleForTeamA"
+                android:src="@drawable/dice_double"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/six_dice"
+                android:onClick="addSixForTeamA"
+                android:src="@drawable/dice_6_40"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/five_dice"
+                android:onClick="addFiveForTeamA"
+                android:src="@drawable/dice_5_40"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/four_dice"
+                android:onClick="addFourForTeamA"
+                android:src="@drawable/dice_4_40"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/three_dice"
+                android:onClick="addThreeForTeamA"
+                android:src="@drawable/dice_3_40"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/two_dice"
+                android:onClick="addTwoForTeamA"
+                android:src="@drawable/dice_2_40"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/one_dice"
+                android:onClick="addOneForTeamA"
+                android:src="@drawable/dice_1_40"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="0dp"
+                android:paddingTop="60dp"
+                android:text="@string/roll_two_words"
+                android:textColor="#ff0000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="45dp"
+                android:text="@string/double_word"
+                android:textColor="#ffcc33"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="28dp"
+                android:text="@string/six_word"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="28dp"
+                android:text="@string/five_word"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="26dp"
+                android:text="@string/four_word"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="26dp"
+                android:text="@string/three_word"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="26dp"
+                android:text="@string/two_word"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="26dp"
+                android:text="@string/one_word"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="#44000000"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/team_b_name"
+                android:textColor="#cccccc"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:text="@string/score_b"
+                android:textColor="#ffffff"
+                android:textSize="56sp" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/double_dice"
+                android:onClick="doubleForTeamB"
+                android:src="@drawable/dice_double"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/six_dice"
+                android:onClick="addSixForTeamB"
+                android:src="@drawable/dice_6_40"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/five_dice"
+                android:onClick="addFiveForTeamB"
+                android:src="@drawable/dice_5_40"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/four_dice"
+                android:onClick="addFourForTeamB"
+                android:src="@drawable/dice_4_40"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/three_dice"
+                android:onClick="addThreeForTeamB"
+                android:src="@drawable/dice_3_40"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/two_dice"
+                android:onClick="addTwoForTeamB"
+                android:src="@drawable/dice_2_40"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:contentDescription="@string/one_dice"
+                android:onClick="addOneForTeamB"
+                android:src="@drawable/dice_1_40"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#55000000"
+        android:onClick="resetScores"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/reset_btn"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
